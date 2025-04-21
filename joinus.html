@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Join Fridomia</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <img src="Coat.png" alt="Fridomia Coat of Arms" class="logo">
+    <div class="menu-icon" onclick="toggleMenu()">📃</div>
+    <div class="header-text">
+      <h1>Become a Citizen of Fridomia</h1>
+      <p>Freedom, Passion, and Integrity in the Pursuit of Peace</p>
+    </div>
+  </header>
+
+  <nav id="menu" class="hidden">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="joinus.html">Join Us</a>
+    <a href="map.html">Map</a>
+    <a href="news.html">News</a>
+    <a href="contact.html">Contact</a>
+    <a href="come.html">Leaders</a>
+  </nav>
+
+  <main class="join-form">
+  <h2>Citizen Application Form</h2>
+  <p>We recommend you memorize your full ID Number — it's used to generate your official ID Card after applying.</p>
+
+  <label for="fullName">Full Name:</label>
+  <input type="text" id="fullName" placeholder="e.g., Joel Nishimwe">
+
+  <label for="dob">Date of Birth:</label>
+  <input type="date" id="dob">
+
+  <label for="sex">Sex:</label>
+  <select id="sex">
+    <option value="">--Select--</option>
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+  </select>
+
+  <label for="today">Today's Date:</label>
+  <input type="date" id="today">
+
+  <label for="country">Country of Residence:</label>
+  <input type="text" id="country" placeholder="e.g., Rwanda">
+
+  <button onclick="generateID()">Generate My Fridomia ID</button>
+
+  <div id="generatedID" class="id-output"></div>
+
+  <div id="formLink" class="form-link"></div>
+
+  <p>After filling the form, please click <a href="getidcard.html">here</a> to get your downloadable ID Card.</p>
+  <a href="getidcard.html" class="btn">Get your ID Card</a>
+</main>
+
+  <footer>
+    <img src="president.png" alt="President" class="president-img">
+    <p><strong>President Patient Joel NISHIMWE</strong></p>
+    <p>"To all who seek a haven of peace, a home for the heart, you are welcome here. In Fridomia, we embrace the journey together, where freedom is our path, passion our guide, and integrity our bond."</p>
+    <p>© 2025 Republic of Fridomia. All rights reserved.</p>
+  </footer>
+  <script src="suffixes.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
