@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Get ID Card | Fridomia</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header>
+    <img src="Coat.png" alt="Fridomia Coat of Arms" class="logo">
+    <div class="menu-icon" onclick="toggleMenu()">📃</div>
+    <div class="header-text">
+      <h1>The Republic of Fridomia</h1>
+      <p>Freedom, Passion, and Integrity in the Pursuit of Peace</p>
+    </div>
+  </header>
+  <nav id="menu" class="hidden">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="joinus.html">Join Us</a>
+    <a href="map.html">Map</a>
+    <a href="news.html">News</a>
+    <a href="contact.html">Contact</a>
+    <a href="come.html">Leaders</a>
+  </nav>
+  
+  <h1>Get Your Fridomia ID Card</h1>
+  <div class="card-form fade-in">
+  <!-- form content -->
+</div>
+
+  <div class="card-form">
+    <input type="text" id="name" placeholder="Full Name" required>
+    <input type="text" id="idNumber" placeholder="Citizen ID Number" required>
+    <label for="dob">Date of Birth</label>
+    <input type="date" id="dob" required>
+    <label>Assuarance Date</label>
+    <input type="date" id="date" required>
+
+    <label>Upload Profile Photo:</label>
+    <input type="file" id="photo" accept="image/*" required>
+
+    <label>Draw or Upload Signature:</label>
+    <canvas id="signCanvas" width="300" height="100"></canvas>
+    <br>
+    <button class="btn small" onclick="clearSignature()">Clear Signature</button>
+    
+    <br><br>
+    <button class="btn" onclick="generateCard()">Generate Card</button>
+  </div>
+
+  <canvas id="idCanvas" width="480" height="300"></canvas>
+
+  <br>
+  <button onclick="downloadCard()" title="Download Card" class="icon-btn">
+    <img src="https://cdn-icons-png.flaticon.com/512/724/724933.png" alt="Download" width="40">
+  </button>
+<footer>
+    <p>Vice-President Olivier MUGISHA</p>
+    <img src="vice.png" alt="Vice-President Photo" style="width:80px; height:auto; border-radius:50%;">
+    <p>"In the quiet of unity, we find strength; in the silence of peace, we hear our true voice. Fridomia blooms, not in the shadow of power, but in the light of freedom, passion, and truth."</p>
+    <p>© 2025 Republic of Fridomia. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
