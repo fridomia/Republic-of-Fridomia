@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fridomia Leaders</title>
+  <link rel="stylesheet" href="leaders.css">
+</head>
+<body>
+
+  <h1 class="title">Leaders of the Republic of Fridomia</h1>
+
+  <div class="leaders-container">
+    <div class="leader-card" data-id="leader1">
+      <img src="president.png" alt="Leader 1">
+      <p>President Patient Joël NISHIMWE</p>
+    </div>
+    <div class="leader-card" data-id="leader2">
+      <img src="vice.png" alt="Leader 2">
+      <p>Vice President Olivier MUGISHA</p>
+    </div>
+    <div class="leader-card" data-id="leader3">
+      <img src="secretary.png" alt="Leader 3">
+      <p>Secretary General Hervè Seba MANZI</p>
+    </div>
+  </div>
+
+  <div class="popup-overlay" id="popup">
+    <div class="popup-card">
+      <span class="close-btn" onclick="closePopup()">&times;</span>
+      <img id="popup-img" src="" alt="Leader" class="popup-img">
+      <h2 id="popup-name"></h2>
+      <p id="popup-quote"></p>
+      <audio id="popup-audio" controls></audio>
+    </div>
+  </div>
+
+  <script src="leaders.js"></script>
+</body>
+</html>
